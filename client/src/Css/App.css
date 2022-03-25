@@ -1,0 +1,29 @@
+/*
+FONTS
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/*
+RESETERS
+*/
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	background-color: #fef0ef;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	font-size: 2.5rem;
+}

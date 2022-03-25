@@ -1,0 +1,98 @@
+#SignIn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 150rem;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 22px;
+	background: #fff;
+}
+
+#SignIn h1 {
+	font-size: 2.5rem;
+	padding-top: 30px;
+}
+
+#SignIn p {
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+
+#SignIn p a {
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: underline;
+	transition: color 0.3s ease-in;
+}
+
+#SignIn p a:hover {
+	color: #77d9eb;
+	transition: color 0.3s ease-in;
+}
+
+#SignIn #Img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#SignIn #Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 50rem;
+	width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #242526;
+	-webkit-box-shadow: -9px -9px 0px 0px #c8c8c8;
+	box-shadow: -9px -9px 0px 0px #c8c8c8;
+	color: #fff;
+}
+
+/*FORM*/
+
+#SignIn #Container form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+#SignIn #Container form input {
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 1.8rem;
+	color: #fff;
+	background: linear-gradient(#fff, #fff) center bottom -1px / calc(100% - 0px) 3px
+		no-repeat;
+}
+
+#SignIn #Container form svg {
+	font-size: 1.8rem;
+	padding-right: 5px;
+	transform: translateY(4px);
+}
+
+#SignIn #Container form button {
+	background-color: #bd69da;
+	outline: none;
+	border: none;
+	font-size: 2rem;
+	width: 12rem;
+	padding: 1.7rem;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+#SignIn #Container form button:hover {
+	background-color: #be69daa1;
+}
+
+#SignIn #Container form h4 {
+	color: #ff1919;
+	font-size: 1.5rem;
+}

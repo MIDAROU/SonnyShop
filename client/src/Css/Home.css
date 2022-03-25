@@ -1,0 +1,80 @@
+main {
+	padding-top: 10rem;
+}
+#Slider {
+	position: relative;
+	height: 88.9vh;
+	width: 100vw;
+	background-color: #ff8800;
+}
+
+#Wrapper {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.Arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 1em;
+	font-size: 2.5rem;
+	padding: 25px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.Arrow.Left {
+	left: 10px;
+}
+
+.Arrow.Right {
+	right: 10px;
+}
+
+.Slide {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+}
+
+.Slide .ImgContainer {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.Slide Img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.Slide .InfoContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	margin: auto;
+	left: 42%;
+	top: 45%;
+}
+
+.Slide .InfoContainer h3 {
+	color: #fff;
+	font-size: 2.7rem;
+}
+
+.Slide .InfoContainer button {
+	background-color: #fff;
+	border: none;
+	font-size: 2.5rem;
+	padding: 15px;
+}

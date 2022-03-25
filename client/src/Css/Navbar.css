@@ -1,0 +1,98 @@
+#Navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 10rem;
+	position: fixed;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 22px;
+	z-index: 100;
+	background-color: #fef0ef;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+/*UNDERLINE*/
+
+#Navbar .Underline {
+	position: relative;
+}
+
+#Navbar .Underline::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	min-height: 3px;
+	background-color: #000;
+	bottom: -5px;
+	left: 0;
+	animation-name: underline;
+	animation-duration: 0.5s;
+}
+
+@keyframes underline {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+#Navbar button {
+	display: none;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 3rem;
+	cursor: pointer;
+	min-width: 26.25px;
+	z-index: 100;
+}
+#Navbar button svg:hover {
+	color: #383737;
+}
+
+/*MAKING NAVBAR MENU RESPONSIVE*/
+
+@media screen and (max-width: 1050px) {
+	/*SHOW BUTTON*/
+	#Navbar button {
+		display: flex;
+	}
+	#Navbar .Underline::after {
+		background-color: #fff;
+	}
+	#Navbar nav a,
+	#Navbar nav svg {
+		color: #fff;
+	}
+	#Navbar nav {
+		background: #242526;
+		position: fixed;
+		right: -50%;
+		top: 0;
+		height: 100%;
+		padding: 141px 0 15px 0;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transition: right 0.8s ease-in-out;
+		z-index: 99;
+	}
+	#Navbar nav.Open {
+		right: 0;
+		transition: right 0.8s ease-in-out;
+	}
+	#Navbar svg.fa-xmark {
+		transition: color 0 ease 0.8s;
+		color: #fff;
+	}
+}
